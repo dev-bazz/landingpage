@@ -3,7 +3,7 @@
 .hero {
         background-color: #e6f0ff;
         padding-block: pix-rem(16);
-        min-height: 95vh !important;
+        min-height: 95vh;
         overflow-x: visible;
         padding-inline: pix-rem(16);
         -webkit-mask-image: url(./assets/heroclip.svg);
@@ -14,6 +14,9 @@
         -webkit-mask-position: 0 100%;
         mask-size: cover;
         -webkit-mask-size: cover;
+        @include media(1220px) {
+                        min-height: 160vh;
+                }
 
         .container {
                 max-width: min(100%, pix-rem(1264));

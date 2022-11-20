@@ -160,6 +160,14 @@
                 margin-inline: auto;
                 margin-top: pix-rem(60);
                 gap: pix-rem(8);
+                @include media(500px) {
+                        flex-direction: column;
+                        align-items: center;
+                        &>* {
+                                width: 100%;
+                                max-width: 100%;
+                        }
+                }
                 & > * {
                         &:nth-child(1) {
                                 flex: 2 1 0;
@@ -168,6 +176,9 @@
                                 padding-block: pix-rem(16);
                                 padding-inline: pix-rem(32);
                                 border-radius: pix-rem(4);
+                                @include media(4500px) {
+                                        flex: 2 2 0;
+                                }
                         }
                         &:nth-child(2) {
                                 flex: 1 1 0;
