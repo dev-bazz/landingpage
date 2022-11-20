@@ -1,6 +1,5 @@
 @use "../../functions.scss" as *;
 
-
 .customerFeed {
         padding-block: pix-rem(16);
         position: relative;
@@ -26,6 +25,10 @@
                         &__quote_l {
                                 position: absolute;
                                 left: pix-rem(-32);
+                                @include media(1058px) {
+                                        top: pix-rem(-24);
+                                        left: pix-rem(16);
+                                }
                         }
                         padding-top: pix-rem(15);
                         max-width: pix-rem(700);
@@ -67,6 +70,9 @@
                 top: 50%;
                 translate: 0 -50%;
                 cursor: pointer;
+                @include media(1058px) {
+                        display: none;
+                }
         }
         &__right {
                 right: 0;
