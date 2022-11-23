@@ -5,7 +5,7 @@ import hotelng from "./assets/hotelsng.webp";
 import payoneer from "./assets/payoneer.webp";
 import zuri from "./assets/zuri.webp";
 
-function OurClient() {
+function BrandsLogo() {
   return (
     <div className={` ${styles.container}`}>
       <h2 className={styles.title}>Our Clients</h2>
@@ -27,4 +27,4 @@ function OurClient() {
   );
 }
 
-export default OurClient;
+export default BrandsLogo;

@@ -2,7 +2,7 @@
 import customer from "./assets/Frame 30781.webp";
 import styles from "./slide.module.scss";
 
-function CustomerSay() {
+function CustomerReview() {
   return (
     <div className={styles.customerFeed}>
       <svg
@@ -73,4 +73,4 @@ function CustomerSay() {
   );
 }
 
-export default CustomerSay;
+export default CustomerReview;

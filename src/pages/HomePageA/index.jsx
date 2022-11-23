@@ -5,16 +5,16 @@ import FaqElement from "./faqElement";
 import Footer from "../../components/footer";
 import NavBarFree from "../../components/navBar_free";
 import Hero from "./heroSection";
-import OurClient from "./our-client";
+import CustomerReview from "./CustomerReview";
+import BrandsLogo from "./BrandLogos";
 
-
-function LandingPage() {
+function HomePage() {
   return (
     <div>
       <NavBarFree />
       <Hero />
       <section aria-label="Our Clients">
-        <OurClient />
+        <BrandsLogo />
       </section>
 
       <section aria-label="About Us">
@@ -24,6 +24,9 @@ function LandingPage() {
           </div>
           <div className={styles.aboutUs__content}>
             <h2 className={styles.aboutUs__title}>About Us</h2>
+            <div className={styles.aboutUs__i2}>
+              <img src={aboutUsimage} alt="" srcSet="" />
+            </div>
             <p className={styles.aboutUs__details}>
               Scrybe is a conversation intelligence tool that automatically
               transcribes and analyzes recorded customer support conversations
@@ -2070,7 +2073,7 @@ function LandingPage() {
         <h2 className={styles.customer__h2}>
           See what our clients are<span> saying</span>{" "}
         </h2>
-        
+        <CustomerReview />
       </section>
       <section className={styles.faq}>
         <div className="container">
@@ -2115,4 +2118,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default HomePage;

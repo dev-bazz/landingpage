@@ -11,10 +11,21 @@
         margin-inline: auto;
         @include media(1100px) {
                 align-items: center;
-                flex-flow: column-reverse;
+                flex-flow: column;
         }
         &__img {
+                
                 width: min(100%, pix-rem(600.85));
+                @include media(1100px){
+                        display: none;
+                }
+        }
+        &__i2 {
+                display: none;
+                @include media(1100px){
+                        width: min(100%, pix-rem(600.85));
+                        display: block;
+                }
         }
         &__content {
                 width: min(100%, pix-rem(590));

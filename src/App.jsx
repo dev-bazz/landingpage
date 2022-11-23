@@ -1,14 +1,14 @@
 import "./App.scss";
 import { Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/landing-page-a";
-import PageB from "./pages/Landing-page-b";
+import HomePage from "./pages/HomePageA";
+import HomePageB from "./pages/HomePageB";
 
 function App() {
   return (
     <Routes>
       {/* landing page */}
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/homeB" element={<PageB />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/homeB" element={<HomePageB />} />
     </Routes>
   );
 }
