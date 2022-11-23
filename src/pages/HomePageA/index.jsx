@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./landingpage.module.scss";
 import aboutUsimage from "./assets/Group 1000000931.webp";
-import Footer from "../../components/footer/index";
-import NavBarFree from "../../components/navBar_free/index";
-import Hero from "./heroSection/index";
-import CustomerReview from "./CustomerReview/index";
-import BrandsLogo from "./BrandLogos/index";
-import Slider from "./Slider/index";
-import FaqElement from "./faqElement/index.jsx";
+import Footer from "../../components/footer";
+import NavBarFree from "../../components/navBar_free";
+import Hero from "./heroSection";
+import CustomerReview from "./CustomerReview";
+import BrandsLogo from "./BrandLogos";
+import Slider from "./Slider";
+import FaqElement from "./faqElement";
 
 function HomePage() {
   return (

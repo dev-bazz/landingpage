@@ -15,6 +15,9 @@
         }
         &__img {
                 width: min(100%, pix-rem(600.85));
+                @include media(1250px) {
+                       width: min(100%, pix-rem(500));
+                }
                 @include media(1100px) {
                         display: none;
                 }
@@ -22,7 +25,7 @@
         &__i2 {
                 display: none;
                 @include media(1100px) {
-                        width: min(100%, pix-rem(600.85));
+                        width: min(100%, pix-rem(400.85));
                         display: block;
                 }
         }
