@@ -7,6 +7,7 @@ import NavBarFree from "../../components/navBar_free";
 import Hero from "./heroSection";
 import CustomerReview from "./CustomerReview";
 import BrandsLogo from "./BrandLogos";
+import Slider from "./Slider";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <NavBarFree />
       <Hero />
       <section aria-label="Our Clients">
+        <Slider />
         <BrandsLogo />
       </section>
 
