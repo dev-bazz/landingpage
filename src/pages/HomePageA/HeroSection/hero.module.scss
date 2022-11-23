@@ -6,9 +6,9 @@
         overflow-x: visible;
         padding: 2vh pix-rem(16) 4vh;
 
-        margin-bottom: pix-rem(40);
+        margin-bottom: pix-rem(4);
         @include media(1220px) {
-                min-height: 90vh;
+                min-height: 84vh;
         }
         .curves {
                 position: absolute;

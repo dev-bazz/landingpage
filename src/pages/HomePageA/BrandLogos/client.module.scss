@@ -19,11 +19,12 @@
                         flex-basis: pix-rem(250);
                 }
                 @include media(484px){
-                flex-direction: column;
                 align-items: center;
-                gap: pix-rem(8);
+                gap: pix-rem(20);
                 justify-content: flex-start;
-                flex-basis: pix-rem(100);
+                max-width: pix-rem(160);
+                justify-content: flex-start;
+                
                 }
         
         }

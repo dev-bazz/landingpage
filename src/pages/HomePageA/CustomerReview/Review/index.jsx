@@ -2,7 +2,14 @@ import React from "react";
 import styles from "./review.module.scss";
 import PropTypes from "prop-types";
 
-export default function Review({ img, author, role, comment }) {
+export default function Review({
+  img,
+  author,
+  role,
+  comment,
+  key,
+  activeIndex,
+}) {
   return (
     <>
       <div className={`container ${styles.customer}`}>

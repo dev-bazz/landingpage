@@ -1,6 +1,6 @@
 /* eslint-disable */
 import Review from "./Review";
-import { feedback } from "./Review/assets/data";
+import ReviewList from "./ReviewList";
 import styles from "./slide.module.scss";
 
 function CustomerReview() {
@@ -23,13 +23,7 @@ function CustomerReview() {
           strokeLinejoin="round"
         />
       </svg>
-      <div className="">
-        {feedback.map((info, index)=>{
-          const{img, author,role, comment} = info;
-          return <Review key={index} img={img} author={author} role={role} comment={comment} />
-        })}
-        
-      </div>
+      <ReviewList />
       <svg
         className={styles.customerFeed__right}
         width="3.8rem"
