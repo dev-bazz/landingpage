@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./pageB.module.scss";
 import imag3d from "./assets/Other 14.webp";
 import upload from "./assets/Group 1000000932.png";
-import NavBar from "../../components/navBar";
-import Footer from "../../components/footer";
-import CustomerReview from "../HomePageA/CustomerReview";
-import BrandsLogo from "../HomePageA/BrandLogos";
-import Hero from "../HomePageA/heroSection";
+import NavBar from "../../components/navBar/index";
+import Footer from "../../components/footer/index";
+import CustomerReview from "../HomePageA/CustomerReview/index";
+import BrandsLogo from "../HomePageA/BrandLogos/index";
+import Hero from "../HomePageA/heroSection/index";
 
 function HomePageB() {
   return (
