@@ -1,23 +1,29 @@
-@use "../../functions.scss" as *;
+@use "../../../functions.scss" as *;
 
 .hero {
-        background-color: #e6f0ff;
+        position: relative;
         padding-block: pix-rem(16);
-        min-height: 95vh;
         overflow-x: visible;
-        padding-inline: pix-rem(16);
-        -webkit-mask-image: url(./assets/heroclip.svg);
-        mask-image: url(./assets/heroclip.svg);
-        mask-repeat: no-repeat;
-        -webkit-mask-repeat: no-repeat;
-        mask-position: 0 100%;
-        -webkit-mask-position: 0 100%;
-        mask-size: cover;
-        -webkit-mask-size: cover;
-        @include media(1220px) {
-                        min-height: 160vh;
-                }
+        padding: 5vh pix-rem(16) 5vh;
 
+        margin-bottom: pix-rem(40);
+        @include media(1220px) {
+                min-height: 200vh;
+        }
+        .curves {
+                position: absolute;
+                top: pix-rem(-160);
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: -1;
+                height: pix-rem(830);
+                max-height: pix-rem(1700);
+                @include media(1220px){
+                        height: 100%;
+                }
+                
+        }
         .container {
                 max-width: min(100%, pix-rem(1264));
                 margin-inline: auto;
@@ -52,6 +58,16 @@
                 }
                 .heroImage {
                         width: min(100%, pix-rem(613));
+                        @include media(1220px){
+                                display: none;
+                        }
+                }
+                .heroImageB {
+                        width: min(100%, pix-rem(613));
+                        display: none;
+                        @include media(1220px){
+                                display: block;
+                        }
                 }
                 .CTAs {
                         display: flex;

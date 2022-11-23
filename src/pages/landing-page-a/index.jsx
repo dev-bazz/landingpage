@@ -4,10 +4,10 @@ import styles from "./landingpage.module.scss";
 import OurClient from "../../components/our-client";
 import aboutUsimage from "./assets/Group 1000000931.webp";
 import FaqElement from "../../components/faqElement";
-import Hero from "../../components/heroSection";
 import CustomerSay from "../../components/customersSay";
 import Footer from "../../components/footer";
 import NavBarFree from "../../components/navBar_free";
+import Hero from "./heroSection";
 
 function LandingPage() {
   return (

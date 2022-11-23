@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./hero.module.scss";
 import heroImage from "./assets/Group 1000000899.webp";
+import curves from "./assets/Vector 13.webp";
 
 function Hero() {
   return (
@@ -14,6 +15,9 @@ function Hero() {
             </span>
             for yor Business
           </h1>
+          <div className={styles.heroImageB}>
+            <img src={heroImage} alt="" srcSet="" />
+          </div>
           <p className={styles.heroText}>
             We help businesses unlock insights and extract meaningful data from
             your customer support conversations{" "}
@@ -31,6 +35,7 @@ function Hero() {
           <img src={heroImage} alt="" srcSet="" />
         </div>
       </div>
+      <img src={curves} alt="" srcset="" className={styles.curves} />
     </section>
   );
 }
