@@ -7,7 +7,7 @@ import Hero from "./heroSection";
 import CustomerReview from "./CustomerReview";
 import BrandsLogo from "./BrandLogos";
 import Slider from "./Slider";
-import FaqElement from "./faqElement";
+import FaqElement from "./faqElement/index.jsx";
 
 function HomePage() {
   return (
