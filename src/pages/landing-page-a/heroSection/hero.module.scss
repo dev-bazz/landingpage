@@ -85,6 +85,9 @@
                                 padding-inline: pix-rem(16);
                                 border-radius: pix-rem(4);
                                 width: min(100%, pix-rem(181));
+                                @include media(1220px){
+                                        width: 100%;
+                                }
                                 text-align: center;
                         }
                         .ctaDemo {
