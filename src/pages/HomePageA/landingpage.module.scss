@@ -36,11 +36,11 @@
                 }
         }
         &__title {
-                font-size: pix-rem(32);
+                font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
         }
         &__details {
                 margin-top: pix-rem(38);
-                font-size: pix-rem(24);
+                font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
                 color: #313131;
                 font-weight: 400;
                 @include media(1100px) {
@@ -133,11 +133,11 @@
 .faq {
         padding-block: pix-rem(24);
         &__h2 {
-                font-size: pix-rem(32);
+                font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
                 text-align: center;
                 & > span {
                         color: #0095e8;
-                        font-size: pix-rem(32);
+                        font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
                 }
         }
         &_faqs {
@@ -196,6 +196,10 @@
                                 padding-block: pix-rem(16);
                                 padding-inline: pix-rem(32);
                                 background-color: #006cff;
+                                @include media(494px){
+                                        max-width: 100%;
+                                        width: 100%;
+                                }
                                 color: white;
                                 border: none;
                                 border-radius: pix-rem(4);
@@ -203,7 +207,7 @@
                 }
         }
         &__title {
-                font-size: pix-rem(48);
+                font-size: clamp(1.25rem, 0.614rem + 3.18vw, 3rem);
                 text-align: center;
                 max-width: 24ch;
                 margin-inline: auto;
