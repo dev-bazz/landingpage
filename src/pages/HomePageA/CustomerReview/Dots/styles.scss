@@ -11,6 +11,7 @@
                                         aspect-ratio: 1;
                                         border-radius: 50%;
                                         transition: ease 1s;
+                                        cursor: pointer;
                                 }
                                 .active-dot {
                                         width: pix-rem(42);
@@ -18,5 +19,6 @@
                                         border-radius: pix-rem(18);
                                         background-color: #54a4ff;
                                         transition: ease 1s;
+                                        cursor: pointer;
                                 }
                         }

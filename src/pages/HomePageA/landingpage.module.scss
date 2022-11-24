@@ -78,12 +78,12 @@
 
         &__card {
                 &_title {
-                        font-size: pix-rem(32);
+                        font-size: clamp(1.5rem, 1.318rem + 0.91vw, 2rem);
                         font-weight: 600;
                         margin-top: pix-rem(46);
                 }
                 &_detail {
-                        font-size: pix-rem(20);
+                        font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
                         font-weight: 300;
                         color: #313131;
                         margin-top: pix-rem(8);

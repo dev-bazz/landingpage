@@ -70,7 +70,9 @@
                 translate: 0 -50%;
                 z-index: 4;
                 cursor: pointer;
-                
+               @include media(590px) {
+                display: none;
+               }
         }
         &__right {
                 right: 0;
