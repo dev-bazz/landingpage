@@ -2,16 +2,9 @@ import React from "react";
 import styles from "./review.module.scss";
 import PropTypes from "prop-types";
 
-export default function Review({
-  img,
-  author,
-  role,
-  comment,
-  key,
-  activeIndex,
-}) {
+export default function Review({ img, author, role, comment }) {
   return (
-    <>
+    <div>
       <div className={`container ${styles.customer}`}>
         <div className={styles.customer__img}>
           <img src={img} alt="Client" />
@@ -48,15 +41,9 @@ export default function Review({
           </p>
           <p className={styles.customer__details__author}> {author}</p>
           <p className={styles.customer__details__role}> {role}</p>
-          <div className={styles.indicators}>
-            <div className={styles.indicators__active} />
-            <div className="" />
-            <div className="" />
-            <div className="" />
-          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,7 @@
 @use  "../../../../functions.scss" as *;
 
 .dots__bazz {
+        margin-top: pix-rem(24);
                                 display: flex;
                                 gap: pix-rem(16);
                                 justify-content: center;
@@ -9,11 +10,13 @@
                                         background-color: grey;
                                         aspect-ratio: 1;
                                         border-radius: 50%;
+                                        transition: ease 1s;
                                 }
                                 .active-dot {
                                         width: pix-rem(42);
                                         aspect-ratio: 2/1;
                                         border-radius: pix-rem(18);
                                         background-color: #54a4ff;
+                                        transition: ease 1s;
                                 }
                         }

@@ -4,11 +4,12 @@
         position: relative;
         padding-block: pix-rem(16);
         overflow-x: visible;
-        padding: 2vh pix-rem(16) 4vh;
+        padding: 2vh pix-rem(16) 0;
 
         margin-bottom: pix-rem(4);
         @include media(1220px) {
-                min-height: 84vh;
+                min-height: 78vh;
+                margin-bottom: pix-rem(8);
         }
         .curves {
                 position: absolute;
@@ -76,6 +77,8 @@
                         @include media(1220px) {
                                 flex-direction: column-reverse;
                                 align-items: center;
+                                gap: pix-rem(16);
+                                margin-top: pix-rem(34);
                         }
 
                         .ctaDemo,

@@ -1,9 +1,25 @@
 /* eslint-disable */
-import Review from "./Review";
+import { useState } from "react";
+import Dot from "./Dots";
+import { feedback } from "./Review/assets/data";
 import ReviewList from "./ReviewList";
 import styles from "./slide.module.scss";
 
+
+
 function CustomerReview() {
+  const [counter, setCounter] = useState(0)
+  function pre(){
+    const index = counter > 0 ? counter - 1 : feedback.length - 1;
+    setCounter(index)
+  }
+  function next(){
+    const index = counter < feedback.length - 1 ? counter + 1 : 0;
+    setCounter(index)
+  }
+
+  
+
   return (
     <div className={styles.customerFeed}>
       <svg
@@ -13,6 +29,7 @@ function CustomerReview() {
         viewBox="0 0 61 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={pre}
       >
         <rect x="0.5" width="60" height="60" rx="30" fill="#0077FF" />
         <path
@@ -23,7 +40,7 @@ function CustomerReview() {
           strokeLinejoin="round"
         />
       </svg>
-      <ReviewList />
+      <ReviewList counter={counter} setCounter={setCounter} />
       <svg
         className={styles.customerFeed__right}
         width="3.8rem"
@@ -31,6 +48,7 @@ function CustomerReview() {
         viewBox="0 0 61 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={next}
       >
         <rect x="0.5" width="60" height="60" rx="30" fill="#0077FF" />
         <path

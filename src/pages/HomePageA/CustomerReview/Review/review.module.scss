@@ -4,9 +4,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
-                gap: pix-rem(16);
+                gap: pix-rem(36);
                 flex-wrap: wrap;
                 position: relative;
+                width: 100%;
                 &__img {
                         max-width: pix-rem(331.84);
                 }
@@ -28,7 +29,12 @@
                         padding-top: pix-rem(15);
                         max-width: pix-rem(700);
                         &__msg {
-                                font-size: pix-rem(22);
+                                padding-top: pix-rem(60);
+                                font-size: clamp(0.875rem, 0.693rem + 0.91vw, 1.375rem);
+                                white-space: normal;
+                                @include media(1100px){
+                                        padding-top: 0;
+                                }
                         }
                         &__author {
                                 font-size: pix-rem(20);
